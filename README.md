@@ -91,8 +91,32 @@
 3. Проверьте распределение по loyalty_tier
 
 ##  Выявление риска оттока
-1. Отфильтруйте по churn_risk_category = "High"
-2. Проанализируйте характеристики этих клиентов:
-3. Какие каналы они используют?
-4. Какой у них days_since_last_purchase?
-5. Какой satisfaction_score?
+  Отфильтруйте по churn_risk_category = "High"
+1. Проанализируйте характеристики этих клиентов:
+2. Какие каналы они используют?
+3. Какой у них days_since_last_purchase?
+4. Какой satisfaction_score?
+
+##  Оценка эффективности каналов
+  Используйте срез shopping_channel
+   Сравните метрики:
+1. LTV:CAC Ratio по каналам
+2. High Churn Risk % по каналам
+3. Conversion Rate
+
+##  Структура данных
+  Основные таблицы
+    Sheet1 (основная таблица клиентов)
+    Демографические данные
+1. customer_id — уникальный идентификатор
+2. age, age_group — возраст и возрастная группа
+3. gender — пол
+4. country, city — география
+
+##  Финансовые показатели
+    total_spent_usd — общая сумма покупок
+1. total_purchases — количество покупок
+2. avg_order_value_usd — средний чек
+3. customer_lifetime_value_usd — LTV
+4. customer_acquisition_cost_usd — CAC
+5. customer_profitability_usd — прибыльность
