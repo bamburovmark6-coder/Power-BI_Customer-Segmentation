@@ -1,7 +1,7 @@
 # Customer Segmentation & Analytics Dashboard
 
 Интерактивный дашборд для анализа клиентской базы, сегментации клиентов и оценки ключевых бизнес-метрик в Power BI.
-  Скриншоты и видео - Dashboard 1.pdf, Dashboard 2.pdf, Visualization .mp4
+  
 ## Содержание
 - [Описание]
 - [Возможности]
@@ -11,6 +11,7 @@
 - [Использование]
 - [Структура данных]
 - [DAX формулы]
+Скриншоты и видео - Dashboard 1.pdf, Dashboard 2.pdf, Visualization .mp4
 
 ## Описание
 
