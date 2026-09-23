@@ -11,7 +11,8 @@
 - [Использование]
 - [Структура данных]
 - [DAX формулы]
-Скриншоты и видео - Dashboard 1.pdf, Dashboard 2.pdf, Visualization .mp4
+- 
+Скриншоты и видео - Dashboard 1.pdf, Dashboard 2.pdf, Visualization.mp4
 
 ## Описание
 
