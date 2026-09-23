@@ -11,9 +11,6 @@
 - [Использование]
 - [Структура данных]
 - [DAX формулы]
-- [Скриншоты]
-- [Вклад]
-- [Лицензия]
 
 ## Описание
 
@@ -120,3 +117,78 @@
 4. customer_lifetime_value_usd — LTV
 5. customer_acquisition_cost_usd — CAC
 6. customer_profitability_usd — прибыльность
+
+##  Поведенческие метрики
+1. tenure_months — срок взаимодействия (месяцы)
+2. purchase_frequency — частота покупок
+3. days_since_last_purchase — дней с последней покупки
+4. recency_score, frequency_score, monetary_score — RFM компоненты
+5. shopping_channel — предпочтительный канал
+6. device_used — используемое устройство
+7. payment_method — способ оплаты
+
+##  Сегментация и оценка
+1. customer_segment — сегмент клиента
+2. segment_category — категория сегмента
+3. loyalty_tier — уровень лояльности
+4. rfm_score, rfm_category — RFM анализ
+5. churn_risk_score, churn_risk_category — риск оттока
+6. customer_health_score, health_status — здоровье клиента
+
+##  Маркетинг и качество
+1. email_open_rate — открываемость писем
+2. click_through_rate — CTR
+3. conversion_rate — конверсия
+4. satisfaction_score, satisfaction_level — удовлетворенность
+5. return_count — количество возвратов
+6. complaint_count — количество жалоб
+
+##  DAX формулы
+// Общая выручка
+Total Revenue = SUM(Sheet1[total_spent_usd])
+
+// Общая прибыль
+Total Profit = SUM(Sheet1[customer_profitability_usd])
+
+// Средняя пожизненная ценность клиента
+Avg CLV = AVERAGE(Sheet1[customer_lifetime_value_usd])
+
+// Средняя стоимость привлечения
+Avg CAC = AVERAGE(Sheet1[customer_acquisition_cost_usd])
+
+// Коэффициент LTV к CAC
+LTV:CAC Ratio = DIVIDE([Avg CLV], [Avg CAC], 0)
+
+// Средний чек
+AOV = DIVIDE(
+    SUM(Sheet1[total_spent_usd]), 
+    SUM(Sheet1[total_purchases]), 
+    0
+)
+
+// Процент клиентов с высоким риском оттока
+High Churn Risk % = 
+DIVIDE(
+    CALCULATE(
+        COUNTROWS(Sheet1), 
+        Sheet1[churn_risk_category] = "High"
+    ), 
+    COUNTROWS(Sheet1), 
+    0
+)
+
+// Средняя удовлетворенность
+Avg CSAT = AVERAGE(Sheet1[satisfaction_score])
+
+// Общее количество клиентов
+Total Customers = COUNTROWS(Sheet1)
+
+// Доля клиентов в сегменте
+Customer Share % = 
+DIVIDE(
+    [Total Customers],
+    CALCULATE([Total Customers], ALL(Sheet1)),
+    0
+)
+
+
