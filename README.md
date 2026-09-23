@@ -1,8 +1,8 @@
-# 📊 Customer Segmentation & Analytics Dashboard
+# Customer Segmentation & Analytics Dashboard
 
 Интерактивный дашборд для анализа клиентской базы, сегментации клиентов и оценки ключевых бизнес-метрик в Power BI.
 
-## 📋 Содержание
+## Содержание
 - [Описание]
 - [Возможности]
 - [Ключевые метрики]
@@ -26,7 +26,7 @@
 
 ## Возможности
 
-### Интерактивная фильтрация
+## Интерактивная фильтрация
 - **Демография**: возраст, пол, страна, город
 - **Сегментация**: customer segment, loyalty tier, RFM категория
 - **Поведение**: каналы продаж, устройства, категории товаров
@@ -42,7 +42,7 @@
 
 ## Ключевые метрики
 
-### Финансовые показатели
+## Финансовые показатели
 |      Метрика      |                Описание                |
 |-------------------|----------------------------------------|
 | **Total Revenue** | Общая выручка от всех клиентов         |
@@ -114,9 +114,9 @@
 4. country, city — география
 
 ##  Финансовые показатели
-    total_spent_usd — общая сумма покупок
-1. total_purchases — количество покупок
-2. avg_order_value_usd — средний чек
-3. customer_lifetime_value_usd — LTV
-4. customer_acquisition_cost_usd — CAC
-5. customer_profitability_usd — прибыльность
+1. total_spent_usd — общая сумма покупок
+2. total_purchases — количество покупок
+3. avg_order_value_usd — средний чек
+4. customer_lifetime_value_usd — LTV
+5. customer_acquisition_cost_usd — CAC
+6. customer_profitability_usd — прибыльность
