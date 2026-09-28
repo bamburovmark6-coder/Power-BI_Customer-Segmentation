@@ -11,6 +11,7 @@
 - [Использование]
 - [Структура данных]
 - [DAX формулы]
+- [Скриншот отчёта]
   
   Скриншоты и видео - Dashboard 1.pdf, Dashboard 2.pdf, Visualization.mp4
 
@@ -192,5 +193,10 @@ DIVIDE(
     CALCULATE([Total Customers], ALL(Sheet1)),
     0
 )
+
+
+##  Скриншот отчёта
+[Dashboard 1.pdf](https://github.com/user-attachments/files/32739504/Dashboard.1.pdf)
+[Dashboard 2.pdf](https://github.com/user-attachments/files/32739505/Dashboard.2.pdf)
 
 
