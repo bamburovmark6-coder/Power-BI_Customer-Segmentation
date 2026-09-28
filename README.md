@@ -196,7 +196,7 @@ DIVIDE(
 
 
 ##  Скриншот отчёта
-[Dashboard 1.pdf](https://github.com/user-attachments/files/32739504/Dashboard.1.pdf)
-[Dashboard 2.pdf](https://github.com/user-attachments/files/32739505/Dashboard.2.pdf)
+<img width="2124" height="1201" alt="image" src="https://github.com/user-attachments/assets/5325cab0-a795-4953-9398-8bf016231628" />
+<img width="2136" height="1211" alt="image" src="https://github.com/user-attachments/assets/fbfb4bec-d2e9-4a3b-a6be-41b7c30ded69" />
 
 
